@@ -1,0 +1,9 @@
+#!/bin/bash
+if [[ $# -eq 1 && $1 == "test" ]]
+then
+	gcc -shared -fPIC -g -Wall -Wextra -fsanitize=address fixe.c -o .fixe.so.dbg
+	gcc test.c .fixe.so.dbg -g -Wall -Wextra -fsanitize=address -o .test.dbg
+	LD_LIBRARY_PATH=. ./.test.dbg
+else
+	gcc -shared -fPIC -Ofast -march=native -s fixe.c -o fixe.so
+fi
