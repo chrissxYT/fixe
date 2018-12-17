@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ $# -eq 1 && $1 == "test" ]]
+then
+	javac -g fixe4j/src/de/chrissx/fixe4j/Fixe.java
+	jar cf .fixe4j.jar.dbg fixe4j/src/de/chrissx/fixe4j/Fixe.class
+	javac -g -cp fixe4j/src/de/chrissx/fixe4j/ test/src/de/chrissx/fixe4j/tests/Test.java
+	jar cvfe .test.jar.dbg de.chrissx.fixe4j.tests.Test test/src/de/chrissx/fixe4j/tests/Test.class
+else
+	javac fixe4j/src/de/chrissx/fixe4j/Fixe.java
+	jar cf fixe4j.jar fixe4j/src/de/chrissx/fixe4j/Fixe.class
+fi
