@@ -1,0 +1,9 @@
+/home/chrissx/fixe/cs/bin/Debug/netstandard2.0/cs.deps.json
+/home/chrissx/fixe/cs/bin/Debug/netstandard2.0/cs.dll
+/home/chrissx/fixe/cs/bin/Debug/netstandard2.0/cs.pdb
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.csprojAssemblyReference.cache
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.csproj.CoreCompileInputs.cache
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.AssemblyInfoInputs.cache
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.AssemblyInfo.cs
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.dll
+/home/chrissx/fixe/cs/obj/Debug/netstandard2.0/cs.pdb

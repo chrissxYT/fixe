@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ $# -eq 1 && $1 == "test" ]]
+then
+    dotnet msbuild /m /v:d /ds /p:Configuration=Debug
+else
+    dotnet msbuild /nologo /p:Configuration=Release
+    cp bin/Release/netstandard2.0/cs.dll ManagedFixe.dll
+    cp bin/Release/netstandard2.0/cs.pdb ManagedFixe.pdb
+    cp bin/Release/netstandard2.0/cs.deps.json ManagedFixe.deps.json
+fi
