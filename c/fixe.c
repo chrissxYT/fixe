@@ -32,7 +32,7 @@ void fixe(fixe_key *key, char *in, char *out, size_t count)
 {
 	char *k = key->bts;
 	size_t m = key->len;
-	if(_64 && m % sizeof(long) == 0 && count % sizeof(long) == 0)
+	if(X64 && m % sizeof(long) == 0 && count % sizeof(long) == 0)
 	{
 		long *o = out;
 		long *i = in;
